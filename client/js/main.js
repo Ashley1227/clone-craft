@@ -2,10 +2,10 @@
 (function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
 
 const socket = io();
-socket.on('connect', function() {
+socket.on('connect', () => {
     console.log('Connected to server!');
 });
-socket.on('debug', function(data) {
+socket.on('debug', (data) => {
     console.log(data);
 });
 

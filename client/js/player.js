@@ -4,7 +4,7 @@ var player = {
     z: 0
 };
 
-window.setInterval(function() {
+window.setInterval(() => {
     socket.emit('player-update', player);
     console.log('pooops');
 }, 1000 / Config.UPDATE_INTERVAL);
