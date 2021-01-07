@@ -27,7 +27,6 @@ document.body.appendChild(renderer.domElement);
 
 function loadChunks() {
     chunks = {};
-
 }
 
 function frame() {
