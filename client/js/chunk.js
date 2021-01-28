@@ -1,5 +1,0 @@
-class Chunk {
-    constructor() {
-        
-    }
-}
